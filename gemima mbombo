@@ -1,31 +1,35 @@
 Fonction triage (entier i ,j) entier nb, nbMin, en entier ;
 Debut
-Pour i = 0 a tb 1 – 1 faire
-Tab3 [i] = tab1 [i]
-Fin pour
-Pour i = tb1 a tb1 + tb2 – 1 faire
-Tab3 [i] = tab2 [ i – tb1 ]
-Fin pour
-Pour I alant de 1 a j – 1 faire
-Nb = nbMin (tb3 , i , j )
-Tb3 [i] = tab3 [nb]
-Fin pour
-Retourner tab3
+  Pour i = 0 a tb 1 – 1 faire
+    Tab3 [i] = tab1 [i]
+  Fin pour
+  Pour i = tb1 a tb1 + tb2 – 1 faire
+    Tab3 [i] = tab2 [ i – tb1 ]
+  Fin pour
+  Pour I alant de 1 a j – 1 faire
+    Nb = nbMin (tb3 , i , j )
+    Tb3 [i] = tab3 [nb]
+  Fin pour
+  Retourner tab3
 Fin
 Fin triage
+
 La conplexite de la function est 0
+
+
 Foncton lecture ( entrer r1, r2, entier) entier
 Somr, diamete en decimal
 Debut
-Ecrire (‘entrez les valeurs de x1 et y1)
-Lire x1 ,y1
-Ecrire (‘entrez les valeurs de x2 et y2)
-Lire x2, y2
-Diametre = sqrt ((x2 –x1)
-2 + (y2 –y1)
-2
-)
-Somr = r1 +r2
-Si diametre <= somr alors ;
-Ecrire « intersection entre 2 cercle »
-Sinon
+  Ecrire (‘entrez les valeurs de x1 et y1)
+  Lire x1 ,y1
+  Ecrire (‘entrez les valeurs de x2 et y2)
+  Lire x2, y2
+  Diametre = sqrt ((x2 –x1)2 + (y2 –y1)2)
+  Somr = r1 +r2
+  Si diametre <= somr alors ;
+    Ecrire « intersection entre 2 cercle »
+  Sinon
+    Ecrire « pas d’intersection »
+  Fin si
+Fin
+Fin intersection
